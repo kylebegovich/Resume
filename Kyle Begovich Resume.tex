@@ -1,0 +1,267 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Deedy - One Page Two Column Resume
+% LaTeX Template
+% Version 1.1 (30/4/2014)
+%
+% Original author:
+% Debarghya Das (http://debarghyadas.com)
+%
+% Original repository:
+% https://github.com/deedydas/Deedy-Resume
+%
+% IMPORTANT: THIS TEMPLATE NEEDS TO BE COMPILED WITH XeLaTeX
+%
+% This template uses several fonts not included with Windows/Linux by
+% default. If you get compilation errors saying a font is missing, find the line
+% on which the font is used and either change it to a font included with your
+% operating system or comment the line out to use the default font.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% CHANGELOG:
+% v1.1:
+% 1. Fixed several compilation bugs with \renewcommand
+% 2. Got Open-source fonts (Windows/Linux support)
+% 3. Added Last Updated
+% 4. Move Title styling into .sty
+% 5. Commented .sty file.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% Known Issues:
+% 1. Overflows onto second page if any column's contents are more than the
+% vertical limit
+% 2. Hacky space on the first bullet point on the second column.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\documentclass[]{deedy-resume-openfont}
+
+
+\begin{document}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     LAST UPDATED DATE
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\lastupdated
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     TITLE NAME
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\namesection{Begovich}{Kyle}{ \urlstyle{same}\url{kylebegovich.com} \\
+\href{mailto:begovichkyle@gmail.com}{begovichkyle@gmail.com} | 630.945.0544
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     COLUMN ONE
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{minipage}[t]{0.33\textwidth}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     EDUCATION
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Education}
+
+\subsection{University of Illinois}
+\descript{BS Math \& Computer Science}
+\location{Expected May 2020 | Urbana, IL \\ 3.3/4.0 GPA}
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     LINKS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Links}
+GitHub:// \href{https://github.com/kylebegovich}{\custombold{kylebegovich}} \\
+LinkedIn://  \href{https://www.linkedin.com/kyle-begovich}{\custombold{kyle-begovich}} \\
+Facebook://  \href{https://www.facebook.com/kyle.begovich.7}{\custombold{kyle.begovich.7}}
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     COURSEWORK
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Coursework}
+\subsection{Computer Science}
+Algorithms \\
+Models of Computation \\
+Data Structures \\
+Software Design \\
+Systems Programming\\
+Computer Architecture \\
+Honors Project \\
+\sectionsep
+
+\subsection{Mathematics}
+Probability Theory \\
+Linear Algebra \\
+Fundamentals \& Proofs \\
+Calculus Sequence \\
+Undergraduate Research Course \\
+{\footnotesize \textit{\textbf{(4 times; team leader twice) }}} \\
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     SKILLS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Skills}
+\subsection{Programming}
+JavaScript \textbullet{} Python \textbullet{} C/C++ \\
+Java \textbullet{} Android \textbullet{} \LaTeX\ \textbullet{} Git \\
+Bash Shell \textbullet{} Linux \textbullet{} MacOS \\
+Alexa \textbullet{} Google Home \textbullet{} GCloud \\
+AWS \textbullet{} Lambda \textbullet{} EC2 \textbullet{} S3 \\
+\sectionsep
+
+\subsection{Soft Skills}
+Team Management \\
+Client Acquisition \\
+Optimizing Budgets \\
+Teaching Experience
+\sectionsep
+
+
+\section{References}
+\subsection{Available Upon Request:}
+
+\href{mailto:r-sowers@illinois.edu}{Research Mentors (current)} \\
+\href{mailto:challen@illinois.edu}{Course Professors (current)} \\
+\href{mailto:shivam.x.sinha@ny.email.gs.com}{Goldman Sachs Manager (former)} \\
+\href{mailto:patrick.mackay@capitalone.com}{Capital One Manager (former)} \\
+
+\sectionsep
+
+
+
+
+
+
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     COLUMN TWO
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\end{minipage}
+\hfill
+\begin{minipage}[t]{0.66\textwidth}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     EXPERIENCE
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Experience}
+
+\runsubsection{Goldman Sachs}
+\descript{| \href{https://www.goldmansachs.com/careers/divisions/engineering/index.html}{Summer Technology Analyst (Intern)}}
+\location{Summer 2018 | Chicago}
+\vspace{\topsep} % Hacky fix for awkward extra vertical space
+\begin{tightemize}
+\item Developing external tools for the Consumer Commercial Banking Division
+\item Working on Natural Language Experiences for Marcus Bank
+\item Pitched project, worked in business timeline, delivered MVP
+\item Wrote all project Node.JS, documentation, presentations, and budgeting
+\end{tightemize}
+\sectionsep
+
+\runsubsection{Capital One}
+\descript{| \href{http://researchpark.illinois.edu/careers/capital-one-illinois-digital-campus-lab-intern}{Software Engineering Intern}}
+\location{August 2017 – May 2018 | Champaign}
+FALL:
+\begin{tightemize}
+\item Java dev working on migrating processes to Cloud compute
+\item Big Data optimization for AWS tools and cost minimization
+\item Management team used our presentation to influence internal Cloud policy
+\end{tightemize}
+SPRING:
+\begin{tightemize}
+\item JavaScript dev working on internal tool for budget tracking
+\item Worked on production software under an AGILE cadence
+\item Used direct, iterative feedback from our users
+\end{tightemize}
+\sectionsep
+
+\runsubsection{Lead Course Developer}
+\descript{| \href{https://cs125.cs.illinois.edu/}{UIUC Intro to CS}}
+\location{Jan 2017 – Current | Urbana}
+\begin{tightemize}
+\item Planned and ran first ever course project fair
+\item Designed and wrote Machine Problems for >900 students per semester
+\item Helped migrate course to new software tools, notably Git and Android
+\end{tightemize}
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     RESEARCH
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Research}
+\runsubsection{\href{https://math.illinois.edu/research/igl/projects?field_project_semester_value=Spring&field_project_year_value=2018}{Video As a Sensor}}
+\descript{| Scholar and Project Manager}
+\location{Jan 2017 – Aug 2018}
+\begin{tightemize}
+\item Developed tools on top of the \textbf{\href{https://pjreddie.com/darknet/yolo/}{You Only Look Once}} Open Source Software
+\item Generated and trained the Convolutional Neural Network on a rich data set
+\item Presented work at UWashington, UI-Chicago, UIUC, and \href{https://github.com/kylebegovich/URS}{published online}
+\item Worked closely with \textbf{\href{http://publish.illinois.edu/r-sowers/}{Prof Richard Sowers}}
+\end{tightemize}
+\sectionsep
+
+% \runsubsection{Math of Poker-Like Games}
+% \descript{| Project Manager}
+% \location{June 2018 - Current}
+% \begin{tightemize}
+% \item  \textbf{\href{https://www.ideals.illinois.edu/bitstream/handle/2142/99958/Dugar2018Symposium.pdf?sequence=2}{Verifying work by John Nash and Lloyd Shapley}}
+% \item Game Theory, Probability, and Statistics Analysis
+% \item Formal proven and highly scaleable project
+% \item Working closely with and under \textbf{\href{https://faculty.math.illinois.edu/~hildebr/}{Prof A J Hildebrand}}
+% \end{tightemize}
+
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     GROUPS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Groups}
+\runsubsection{\href{https://hackillinois.org/}{HackIllinois}}
+\descript{| Experience Team Director}
+\location{April 2017 – Current}
+\begin{tightemize}
+\item Student-run, open source Hackathon
+\item Responsible for finding and vetting all speakers, mentors, and projects
+\item Planning and preparing all workshops, swag, admissions, and volunteers
+\item Managed a team with about 40 students
+\item Working \textasciitilde20 hr/wk in Summer \& Fall and \textasciitilde40 hr/wk in Spring
+\end{tightemize}
+\sectionsep
+
+\runsubsection{\href{https://reflectionsprojections.org/}{Reflections|Projections}}
+\descript{| Operations Team Leader}
+\location{March 2018 - Current}
+\begin{tightemize}
+\item Student-run week-long tech conference
+\item Coordinating travel, food, building flow, volunteers, and swag
+\item ``Crisis Team'' member: most reliable staff for mid-event issues
+\item Working \textasciitilde10 hr/wk in Summer and \textasciitilde30 hr/wk in Fall
+\end{tightemize}
+
+\end{minipage}
+\end{document}
